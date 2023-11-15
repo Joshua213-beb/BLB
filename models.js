@@ -1,14 +1,41 @@
-//Remember to import in mongoose
+// models.js
 
+const mongoose = require('mongoose');
 
-//create the citizen schema here with the appropriate data types
+// Citizen Schema
+const citizenSchema = new mongoose.Schema({
+  firstName: {
+    type: String,
+    required: true,
+  },
+  lastName: {
+    type: String,
+    required: true,
+  },
+  age: {
+    type: Number,
+    required: true,
+  },
+  // Add more fields as needed
+});
 
+// Title Schema
+const titleSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  // Add more fields as needed
+});
 
-//create the title schema here wit the right fields
+// Convert the schemas into models
+const Citizen = mongoose.model('Citizen', citizenSchema);
+const Title = mongoose.model('Title', titleSchema);
 
+// Export the models as modules
+module.exports = {
+  Citizen,
+  Title,
+};
 
-//convert the schemas into models from here
-
-
-//export the models as modules from here.
 

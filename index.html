@@ -16,7 +16,74 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3>REGISTRATION FORMS</h3>
-                    <p>citizen and title registration forms</p>
+                    <p><form action="/create-citizen" method="POST">
+                        <div class="form-group">
+                          <label for="citizenName" class="form-label">Citizen Name:</label>
+                          <input type="text" id="citizenName" class="form-input" placeholder="Enter citizen name">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="dateOfBirth" class="form-label">Date of Birth:</label>
+                          <input type="date" id="dateOfBirth" class="form-input">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="fatherName" class="form-label">Father Name:</label>
+                          <input type="text" id="fatherName" class="form-input" placeholder="Enter father name">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="motherName" class="form-label">Mother Name:</label>
+                          <input type="text" id="motherName" class="form-input" placeholder="Enter mother name">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="gender" class="form-label">Gender:</label>
+                          <select id="gender" class="form-input">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="bloodGroup" class="form-label">Blood Group:</label>
+                          <input type="text" id="bloodGroup" class="form-input" placeholder="Enter blood group">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="landLocation" class="form-label">Location of the Land:</label>
+                          <input type="text" id="landLocation" class="form-input" placeholder="Enter land location">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="landSize" class="form-label">Size of the Land:</label>
+                          <input type="number" id="landSize" class="form-input" placeholder="Enter land size">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="xCoordinate" class="form-label">X Coordinate:</label>
+                          <input type="number" id="xCoordinate" class="form-input" placeholder="Enter X coordinate">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="yCoordinate" class="form-label">Y Coordinate:</label>
+                          <input type="number" id="yCoordinate" class="form-input" placeholder="Enter Y coordinate">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="titleNumber" class="form-label">Title Number:</label>
+                          <input type="text" id="titleNumber" class="form-input" placeholder="Enter title number">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="satellitePhoto" class="form-label">Satellite Photo:</label>
+                          <input type="file" id="satellitePhoto" class="form-input">
+                        </div>
+                  
+                        <div class="form-group">
+                          <button type="submit" class="btn-register">Register Citizen</button>
+                        </div>
+                      </form></p>
                 </div>
                 <div class="col-md-4">
                     <h3>REGISTERD CITIZENS</h3>
